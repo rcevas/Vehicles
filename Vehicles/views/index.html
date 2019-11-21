@@ -12,15 +12,16 @@
   </head>
   <body>
 <div class="container">
+        <a id="newCar" role="button" class="btn btn-light btn-outline-dark d-none" href="index.html">Add New Car</a>
     <h1>Ejercicios Vehiculos</h1>
     <form id="carInfo" class="form-group">
         <h3>Car</h3>
         <label for="plate">Plate</label>
-        <input type="text" class="form-control" id="plate" name="Plate" pattern="[\d]{4}[A-Za-z]{3}" title="0000AAA" value="1234aaa" required>
+        <input type="text" class="form-control" id="plate" name="Plate" pattern="[\d]{4}[A-Za-z]{3}" title="0000AAA" required>
         <label for="brand">Brand</label>
-        <input type="text" class="form-control" id="brand" name="Brand" value="aa" required>
+        <input type="text" class="form-control" id="brand" name="Brand" required>
         <label for="color">Color</label>
-        <input type="text" class="form-control" id="color" name="Color" value="ss" required>  
+        <input type="text" class="form-control" id="color" name="Color" required>  
         
         <a role="button" class="btn btn-light btn-outline-dark" onclick="createCar();">Create car</a>
     </form>
@@ -35,24 +36,24 @@
         <h3>Wheels</h3>
         <form action="text" class="form-group">
             <label for="">Marca Rueda 1</label>
-            <input class="form-control" type="text" id="mr1" value="a">
+            <input class="form-control" type="text" id="mr1">
             <label for="">Diametro Rueda 1</label>
-             <input class="form-control" type="text" id="dr1" value="0.5">             
+             <input class="form-control" type="text" id="dr1">             
         
             <label for="">Marca Rueda 2</label>
-             <input class="form-control" type="text" id="mr2" value="b">
+             <input class="form-control" type="text" id="mr2">
              <label for="">Diametro Rueda 2</label>
-             <input class="form-control" type="text" id="dr2" value="1">             
+             <input class="form-control" type="text" id="dr2">             
         
             <label for="">Marca Rueda 3</label>
-             <input class="form-control" type="text" id="mr3" value="c">
+             <input class="form-control" type="text" id="mr3">
              <label for="">Diametro Rueda 3</label>
-             <input class="form-control" type="text" id="dr3" value="1.5">             
+             <input class="form-control" type="text" id="dr3">             
        
             <label for="">Marca Rueda 4</label>
-             <input class="form-control" type="text" id="mr4" value="d">
+             <input class="form-control" type="text" id="mr4">
              <label for="">Diametro Rueda 4</label>
-             <input class="form-control" type="text" id="dr4" value="2"> 
+             <input class="form-control" type="text" id="dr4"> 
             <a role="button" class="btn btn-light btn-outline-dark" onclick="createWheels();">Create wheels</a>                         
         </form>
         
