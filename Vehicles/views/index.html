@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<div class="container">
+    <h1>Ejercicios Vehiculos</h1>
+    <form id="carInfo" class="form-group">
+        <h3>Car</h3>
+        <label for="plate">Plate</label>
+        <input type="text" class="form-control" id="plate" name="Plate" pattern="[\d]{4}[A-Za-z]{3}" title="0000AAA" value="1234aaa" required>
+        <label for="brand">Brand</label>
+        <input type="text" class="form-control" id="brand" name="Brand" value="aa" required>
+        <label for="color">Color</label>
+        <input type="text" class="form-control" id="color" name="Color" value="ss" required>  
+        
+        <a role="button" class="btn btn-light btn-outline-dark" onclick="createCar();">Create car</a>
+    </form>
+    <h3>Car</h3>
+    <div>
+        <label for="">Plate:</label>  <div id="car1-plate" class="font-weight-bold"></div>
+        <label for="">Brand:</label>  <div id="car1-brand" class="font-weight-bold"></div>
+        <label for="">Color:</label>  <div id="car1-color" class="font-weight-bold"></div> 
+    </div>
+
+    <section id="wheelsInfo" class="d-none">
+        <h3>Wheels</h3>
+        <form action="text" class="form-group">
+            <label for="">Marca Rueda 1</label>
+            <input class="form-control" type="text" id="mr1" value="a">
+            <label for="">Diametro Rueda 1</label>
+             <input class="form-control" type="text" id="dr1" value="0.5">             
+        
+            <label for="">Marca Rueda 2</label>
+             <input class="form-control" type="text" id="mr2" value="b">
+             <label for="">Diametro Rueda 2</label>
+             <input class="form-control" type="text" id="dr2" value="1">             
+        
+            <label for="">Marca Rueda 3</label>
+             <input class="form-control" type="text" id="mr3" value="c">
+             <label for="">Diametro Rueda 3</label>
+             <input class="form-control" type="text" id="dr3" value="1.5">             
+       
+            <label for="">Marca Rueda 4</label>
+             <input class="form-control" type="text" id="mr4" value="d">
+             <label for="">Diametro Rueda 4</label>
+             <input class="form-control" type="text" id="dr4" value="2"> 
+            <a role="button" class="btn btn-light btn-outline-dark" onclick="createWheels();">Create wheels</a>                         
+        </form>
+        
+    </section>
+    <section id="wheels" class="d-none">        
+        <h3>Wheels</h3>
+        <div id="rueda1" class="d-none">
+            <label for="">Marca Rueda 1:</label>
+             <div id="wmr1" class="font-weight-bold"></div>
+             <label for="">Diametro Rueda 1:</label>
+            <div id="wdr1" class="font-weight-bold"></div>          
+        </div>
+        <div id="rueda2" class="d-none">
+            <label for="">Marca Rueda 2:</label>
+             <div id="wmr2" class="font-weight-bold"></div>
+             <label for="">Diametro Rueda 2:</label>
+             <div id="wdr2" class="font-weight-bold"></div> 
+        </div>               
+        <div id="rueda3" class="d-none">
+            <label for="">Marca Rueda 3: </label>
+            <div id="wmr3" class="font-weight-bold"></div>
+            <label for="">Diametro Rueda 3:</label>
+              <div id="wdr3" class="font-weight-bold"></div> 
+        </div>          
+        <div id="rueda4" class="d-none">
+            <label for="">Marca Rueda 4:</label>
+             <div id="wmr4" class="font-weight-bold"></div>
+             <label for="">Diametro Rueda 4:</label>
+              <div id="wdr4" class="font-weight-bold"></div>                      
+        </div>
+        
+    </section>
+</div> 
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../models/car.js"></script>
+<script src="../models/wheel.js"></script>
+<script src="../controllers/controller.js"></script>
+  </body>
+</html>
+
+
